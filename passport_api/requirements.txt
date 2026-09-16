@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+sqlalchemy[asyncio]
+asyncpg
+passlib[bcrypt]
+bcrypt==4.0.1          # pin de compatibilidad con passlib 1.7.4 y bcrypt >= 4.1
+PyJWT
+python-multipart
+fastapi-csrf-protect
+slowapi
+pydantic-settings
