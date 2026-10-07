@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  db:
+    image: postgres:15-alpine
+    container_name: passport_db
+    environment:
+      POSTGRES_USER: passport_user
+      POSTGRES_PASSWORD: passport_password
+      POSTGRES_DB: passport_db
+    ports:
+      - "5432:5432"
+    restart: unless-stopped
